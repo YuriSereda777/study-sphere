@@ -10,6 +10,7 @@ const Footer = () => {
       py="10px"
       fontSize="20px"
       fontWeight={500}
+      color="gray.600"
     >
       Copyright © {currentYear}
       <Text color="brand.500"> StudySphere</Text>
