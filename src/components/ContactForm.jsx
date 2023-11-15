@@ -9,6 +9,7 @@ import {
   Button,
   Box,
   GridItem,
+  Text,
 } from "@chakra-ui/react";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiPencil } from "react-icons/bi";
@@ -199,14 +200,16 @@ const ContactForm = () => {
             <ContactFormError text={formik.errors.message} />
           )}
         </Box>
-        <Button type="submit" colorScheme="blue" width="full" mt="10px">
+        <Button type="submit" width="full" mt="10px">
           Submit
         </Button>
-        {submissionState === "success"
-          ? "Your message has been sent successfully"
-          : submissionState === "error"
-          ? "An error occurred."
-          : ""}
+        <Text color="gray.200">
+          {submissionState === "success"
+            ? "Your message has been sent successfully"
+            : submissionState === "error"
+            ? "An error occurred."
+            : ""}
+        </Text>
       </Flex>
     </form>
   );
