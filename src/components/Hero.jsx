@@ -1,5 +1,13 @@
 import { useEffect, useRef } from "react";
-import { Box, Button, Flex, Grid, GridItem, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  GridItem,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import Typed from "typed.js";
 import wave from "../assets/wave.svg";
 
@@ -16,6 +24,7 @@ const Hero = () => {
       typeSpeed: 50,
       loop: true,
       loopCount: Infinity,
+      showCursor: false,
     });
 
     return () => {
@@ -25,15 +34,15 @@ const Hero = () => {
 
   return (
     <Flex
-      backgroundColor="#7971ea"
+      backgroundColor="brand.500"
       position="relative"
       direction="column"
       justifyContent="center"
     >
       <Box
         px={{ base: "2em", sm: "4em", md: "6em", lg: "10em", xl: "14em" }}
-        pt="100px"
-        mb={{ base: "0", lg: "-50px" }}
+        pt={{ base: "70px", md: "100px" }}
+        mb={{ base: "0", md: "-50px" }}
       >
         <Grid
           templateColumns="repeat(2, 1fr)"
@@ -43,12 +52,33 @@ const Hero = () => {
           position="relative"
           zIndex="2"
         >
-          <GridItem colSpan={{ base: 2, md: 1 }}>
-            <Flex h="100%" direction="column" gap="30px">
-              <Box color="gray.200" fontSize="35px" lineHeight="1.5">
-                <span ref={el}></span>
+          <GridItem colSpan={{ base: 2, md: 1 }} h="100%">
+            <Flex
+              h="100%"
+              direction="column"
+              gap="30px"
+              justifyContent="space-around"
+              alignItems={{ base: "center", md: "flex-start" }}
+            >
+              <Box
+                color="gray.200"
+                fontSize={{ base: "25px", md: "30px", lg: "35px" }}
+                lineHeight="1.5"
+              >
+                <Text
+                  as="span"
+                  display="inline-block"
+                  textAlign={{ base: "center", md: "left" }}
+                  ref={el}
+                ></Text>
               </Box>
-              <Button w="fit-content" px="30px" backgroundColor="white">
+              <Button
+                as="a"
+                href="#about"
+                w="fit-content"
+                px="30px"
+                backgroundColor="white"
+              >
                 Learn more!
               </Button>
             </Flex>
