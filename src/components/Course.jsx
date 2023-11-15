@@ -33,8 +33,18 @@ const Course = ({
           w={350}
           borderRadius="lg"
         />
-        <Stack mt="5" spacing="2" color="gray.600" >
-          <Flex direction="row" justifyContent="space-between" gap="3">
+        <Stack
+          mt="5"
+          spacing="2"
+          color="gray.600"
+          fontSize={{ base: "15px", md: "17px" }}
+        >
+          <Flex
+            direction="row"
+            justifyContent="space-between"
+            gap={{ base: "1", lg: "3" }}
+            flexWrap="wrap"
+          >
             <Flex direction="row" alignItems="center" gap="5px">
               <Icon as={FiBook} />
               <Text>{lessons} Lessons</Text>
@@ -48,14 +58,31 @@ const Course = ({
               <Text>{hours} Hours</Text>
             </Flex>
           </Flex>
-          <Heading size="md" fontWeight={500} color="gray.600">{title}</Heading>
+          <Heading
+            size={{ base: "sm", md: "md" }}
+            fontWeight={500}
+            color="gray.600"
+          >
+            {title}
+          </Heading>
         </Stack>
       </CardBody>
       <Divider color="gray.300" />
       <CardFooter py={3}>
         <Flex flex="1" gap="1" alignItems="center" flexWrap="wrap">
-          <Avatar size="sm" name={instructorName} src={instructorImage} transform="auto" translateY="2px" />
-          <Heading size="sm" color="gray.700" fontWeight="500">{instructorName}</Heading>
+          <Avatar
+            size={{ base: "xs", md: "sm" }}
+            name={instructorName}
+            src={instructorImage}
+            transform="auto"
+          />
+          <Heading
+            size={{ base: "xs", md: "sm" }}
+            color="gray.700"
+            fontWeight="500"
+          >
+            {instructorName}
+          </Heading>
         </Flex>
       </CardFooter>
     </Card>

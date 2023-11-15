@@ -27,7 +27,6 @@ const Courses = () => {
           grabCursor={true}
           slidesPerView={"auto"}
           spaceBetween={25}
-          centeredSlides={true}
           loop={true}
           className="courses-list-swiper"
         >
