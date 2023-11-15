@@ -9,7 +9,7 @@ const Contact = () => {
     <Flex
       direction="column"
       pb={{ base: "50px", lg: "80px" }}
-      backgroundColor="#7971ea"
+      backgroundColor="brand.500"
       position="relative"
     >
       <Image src={wave2} />

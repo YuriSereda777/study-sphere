@@ -8,7 +8,7 @@ import "swiper/css";
 
 const Courses = () => {
   return (
-    <Flex direction="column" backgroundColor="#7971ea" position="relative">
+    <Flex direction="column" backgroundColor="brand.500" position="relative">
       <Image src={wave2} />
       <Box
         px={{ base: "2em", sm: "4em", md: "6em", lg: "10em", xl: "14em" }}
