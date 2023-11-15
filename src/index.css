@@ -2,8 +2,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .swiper {
-  max-width: 100%
+  max-width: 100%;
 }
 .swiper-slide {
   width: fit-content;
