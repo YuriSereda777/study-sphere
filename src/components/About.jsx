@@ -16,6 +16,7 @@ const About = () => {
       alignItems="center"
       gap={{ base: "10px", md: "18px", lg: "30px" }}
       px={{ base: "2em", sm: "4em", md: "6em", lg: "10em", xl: "14em" }}
+      id="about"
     >
       <Heading
         as="h2"

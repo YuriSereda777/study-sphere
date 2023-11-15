@@ -11,6 +11,7 @@ const Contact = () => {
       pb={{ base: "50px", lg: "80px" }}
       backgroundColor="brand.500"
       position="relative"
+      id="contact"
     >
       <Image src={wave2} />
       <Box

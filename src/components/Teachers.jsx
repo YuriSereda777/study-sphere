@@ -11,6 +11,7 @@ const Teachers = () => {
       alignItems="center"
       gap={{ base: "25px", md: "35px", lg: "45px" }}
       px={{ base: "2em", sm: "4em", md: "6em", lg: "10em", xl: "14em" }}
+      id="teachers"
     >
       <Heading
         as="h2"
