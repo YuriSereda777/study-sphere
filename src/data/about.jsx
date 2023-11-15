@@ -12,7 +12,7 @@ export const about = {
       image: onlineLearning,
     },
     {
-      id: 1,
+      id: 2,
       title: "Guided Learning with Expert Instructors",
       text: "Experience personalized learning at StudySphere with dedicated educators guiding you through an enriching journey of knowledge. Benefit from expert guidance, interactive lessons, and a supportive learning community to excel in your academic pursuits.",
       image: educatorGuidance,
