@@ -19,6 +19,7 @@ import { useRef, useState } from "react";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import ContactFormError from "./ContactFormError";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
   const [submissionState, setSubmissionState] = useState();
@@ -61,17 +62,29 @@ const ContactForm = () => {
         setSubmissionState("success");
       } catch (error) {
         setSubmissionState("error");
-        console.log(error);
       }
     },
   });
+
+  const formInputsVariants = (delay) => {
+    return {
+      initial: { opacity: 0 },
+      inView: { opacity: 1, transition: { duration: 0.2, delay } },
+    };
+  };
+
   return (
     <form ref={formRef} onSubmit={formik.handleSubmit}>
       <Flex direction="column" gap="16px">
         <Grid templateColumns="repeat(2, 1fr)" gap="16px">
           <GridItem colSpan={{ base: 2, md: 1, lg: 2, xl: 1 }}>
             <Box>
-              <InputGroup>
+              <InputGroup
+                as={motion.div}
+                variants={formInputsVariants(0)}
+                initial="initial"
+                whileInView="inView"
+              >
                 <InputLeftElement
                   pointerEvents="none"
                   h="100%"
@@ -100,7 +113,12 @@ const ContactForm = () => {
           </GridItem>
           <GridItem colSpan={{ base: 2, md: 1, lg: 2, xl: 1 }}>
             <Box>
-              <InputGroup>
+              <InputGroup
+                as={motion.div}
+                variants={formInputsVariants(0.2)}
+                initial="initial"
+                whileInView="inView"
+              >
                 <InputLeftElement
                   pointerEvents="none"
                   h="100%"
@@ -129,7 +147,12 @@ const ContactForm = () => {
           </GridItem>
         </Grid>
         <Box>
-          <InputGroup>
+          <InputGroup
+            as={motion.div}
+            variants={formInputsVariants(0.4)}
+            initial="initial"
+            whileInView="inView"
+          >
             <InputLeftElement
               pointerEvents="none"
               h="100%"
@@ -156,7 +179,12 @@ const ContactForm = () => {
           )}
         </Box>
         <Box>
-          <InputGroup>
+          <InputGroup
+            as={motion.div}
+            variants={formInputsVariants(0.6)}
+            initial="initial"
+            whileInView="inView"
+          >
             <InputLeftElement
               pointerEvents="none"
               h="100%"
@@ -195,6 +223,10 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
+            as={motion.div}
+            variants={formInputsVariants(0.8)}
+            initial="initial"
+            whileInView="inView"
           />
           {formik.touched.message && formik.errors.message && (
             <ContactFormError text={formik.errors.message} />

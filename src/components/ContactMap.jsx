@@ -1,9 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import GoogleMapReact from "google-map-react";
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import { useRef } from "react";
+import { useInView, motion } from "framer-motion";
 
 const ContactMap = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   const defaultProps = {
     center: {
       lat: 10.99835602,
@@ -13,14 +16,32 @@ const ContactMap = () => {
   };
 
   return (
-    <Box h="300px" borderRadius="8px" overflow="hidden">
+    <Box
+      ref={ref}
+      variants={{
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            ease: "easeInOut",
+            duration: 0.5,
+          },
+        },
+      }}
+      as={motion.div}
+      initial={"hidden"}
+      animate={isInView ? "visible" : "hidden"}
+      h="300px"
+      borderRadius="8px"
+      overflow="hidden"
+    >
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent lat={30.033333} lng={31.233334} text="My Marker" />
-      </GoogleMapReact>
+      ></GoogleMapReact>
     </Box>
   );
 };
