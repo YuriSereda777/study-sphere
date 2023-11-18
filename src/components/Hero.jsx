@@ -41,8 +41,8 @@ const Hero = () => {
     >
       <Box
         px={{ base: "2em", sm: "4em", md: "6em", lg: "10em", xl: "14em" }}
-        pt={{ base: "70px", md: "100px" }}
-        mb={{ base: "0", md: "-50px" }}
+        pt="70px"
+        mb={{ base: "0", md: "-50px", lg: "-80px" }}
       >
         <Grid
           templateColumns="repeat(2, 1fr)"
