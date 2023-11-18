@@ -1,9 +1,13 @@
 import { Avatar, Flex, Heading, Text } from "@chakra-ui/react";
 
-const Teacher = ({ firstName, lastName, title, description }) => {
+const Teacher = ({ image, firstName, lastName, title, description }) => {
   return (
     <Flex direction="column" alignItems="center" gap="5px">
-      <Avatar size={{base: "xl", lg: "2xl"}} name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+      <Avatar
+        size={{ base: "xl", lg: "2xl" }}
+        name={`${firstName} ${lastName}`}
+        src={image}
+      />
       <Heading as="h4" fontSize="20px" color="gray.600">
         {firstName} {lastName}
       </Heading>

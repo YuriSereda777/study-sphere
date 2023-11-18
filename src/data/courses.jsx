@@ -1,3 +1,11 @@
+import teacher01 from "../assets/teacher01.webp";
+import teacher02 from "../assets/teacher02.webp";
+import teacher03 from "../assets/teacher03.webp";
+import teacher04 from "../assets/teacher04.webp";
+import teacher05 from "../assets/teacher05.webp";
+import teacher06 from "../assets/teacher06.webp";
+import teacher07 from "../assets/teacher07.webp";
+
 export const courses = [
   {
     id: 1,
@@ -8,8 +16,7 @@ export const courses = [
     hours: 20,
     students: 50,
     instructorName: "Hanson Lindgren",
-    instructorImage:
-      "https://themephi.net/template/eduan/eduan/assets/img/testimonial/3/2.jpg",
+    instructorImage: teacher01,
   },
   {
     id: 2,
@@ -20,7 +27,7 @@ export const courses = [
     hours: 30,
     students: 80,
     instructorName: "Emily Rodriguez",
-    instructorImage: "https://example.com/instructor2.jpg",
+    instructorImage: teacher02,
   },
   {
     id: 3,
@@ -30,8 +37,8 @@ export const courses = [
     lessons: 45,
     hours: 25,
     students: 60,
-    instructorName: "Alex Turner",
-    instructorImage: "https://example.com/instructor3.jpg",
+    instructorName: "Sophia Turner",
+    instructorImage: teacher03,
   },
   {
     id: 4,
@@ -42,7 +49,7 @@ export const courses = [
     hours: 18,
     students: 40,
     instructorName: "Olivia Martinez",
-    instructorImage: "https://example.com/instructor4.jpg",
+    instructorImage: teacher04,
   },
   {
     id: 5,
@@ -53,7 +60,7 @@ export const courses = [
     hours: 28,
     students: 70,
     instructorName: "Daniel Baker",
-    instructorImage: "https://example.com/instructor5.jpg",
+    instructorImage: teacher05,
   },
   {
     id: 6,
@@ -63,8 +70,8 @@ export const courses = [
     lessons: 40,
     hours: 22,
     students: 55,
-    instructorName: "Sophia Johnson",
-    instructorImage: "https://example.com/instructor6.jpg",
+    instructorName: "Keyon Johnson",
+    instructorImage: teacher06,
   },
   {
     id: 7,
@@ -74,7 +81,7 @@ export const courses = [
     lessons: 50,
     hours: 24,
     students: 65,
-    instructorName: "Mason White",
-    instructorImage: "https://example.com/instructor7.jpg",
+    instructorName: "Joany White",
+    instructorImage: teacher07,
   },
 ];
