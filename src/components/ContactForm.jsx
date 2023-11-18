@@ -223,7 +223,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
-            as={motion.div}
+            as={motion.textarea}
             variants={formInputsVariants(0.8)}
             initial="initial"
             whileInView="inView"
