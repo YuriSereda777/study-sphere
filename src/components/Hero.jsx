@@ -41,8 +41,8 @@ const Hero = () => {
     >
       <Box
         px={{ base: "2em", sm: "4em", md: "6em", lg: "10em", xl: "14em" }}
-        pt="70px"
-        mb={{ base: "0", md: "-50px", lg: "-80px" }}
+        pt={{ base: "70px", xl: "40px" }}
+        mb={{ base: "0", md: "-50px", lg: "-80px", xl: "-120px" }}
       >
         <Grid
           templateColumns="repeat(2, 1fr)"
@@ -57,12 +57,12 @@ const Hero = () => {
               h="100%"
               direction="column"
               gap="30px"
-              justifyContent="space-around"
+              justifyContent="space-evenly"
               alignItems={{ base: "center", md: "flex-start" }}
             >
               <Box
                 color="gray.200"
-                fontSize={{ base: "25px", md: "30px", lg: "35px" }}
+                fontSize={{ base: "25px", lg: "28px", xl: "32px" }}
                 lineHeight="1.5"
               >
                 <Text
