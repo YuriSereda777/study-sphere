@@ -61,7 +61,7 @@ const AboutSection = ({ section }) => {
           <Heading
             as="h5"
             color="gray.600"
-            fontSize={{ base: "24px", md: "30px", lg: "28px", xl: "32px" }}
+            fontSize={{ base: "25px", md: "30px", lg: "25px", xl: "32px" }}
             fontWeight={500}
           >
             {section.title}
