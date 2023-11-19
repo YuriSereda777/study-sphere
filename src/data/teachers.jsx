@@ -57,7 +57,7 @@ export const teachers = [
 
     image: teacher06,
     firstName: "Mateo",
-    lastName: "Parisian",
+    lastName: "Miller",
     title: "Art and Design Professor",
     description:
       "Encouraging creativity and self-expression through various artistic mediums.",
