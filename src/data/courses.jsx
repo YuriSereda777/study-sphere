@@ -1,3 +1,11 @@
+import course01 from "../assets/course01.webp";
+import course02 from "../assets/course02.webp";
+import course03 from "../assets/course03.webp";
+import course04 from "../assets/course04.webp";
+import course05 from "../assets/course05.webp";
+import course06 from "../assets/course06.webp";
+import course07 from "../assets/course07.webp";
+
 import teacher01 from "../assets/teacher01.webp";
 import teacher02 from "../assets/teacher02.webp";
 import teacher03 from "../assets/teacher03.webp";
@@ -10,8 +18,7 @@ export const courses = [
   {
     id: 1,
     title: "Learn Python – Interactive Python",
-    image:
-      "https://themephi.net/template/eduan/eduan/assets/img/course/3/1.jpg",
+    image: course01,
     lessons: 48,
     hours: 20,
     students: 50,
@@ -21,8 +28,7 @@ export const courses = [
   {
     id: 2,
     title: "Web Development Bootcamp",
-    image:
-      "https://themephi.net/template/eduan/eduan/assets/img/course/3/2.jpg",
+    image: course02,
     lessons: 60,
     hours: 30,
     students: 80,
@@ -32,8 +38,7 @@ export const courses = [
   {
     id: 3,
     title: "Introduction to Data Science",
-    image:
-      "https://themephi.net/template/eduan/eduan/assets/img/course/3/3.jpg",
+    image: course03,
     lessons: 45,
     hours: 25,
     students: 60,
@@ -43,8 +48,7 @@ export const courses = [
   {
     id: 4,
     title: "Graphic Design Fundamentals",
-    image:
-      "https://ivy-school.thimpress.com/demo-4/wp-content/uploads/sites/4/2017/12/Untitled-19-450x300.jpg",
+    image: course04,
     lessons: 35,
     hours: 18,
     students: 40,
@@ -54,8 +58,7 @@ export const courses = [
   {
     id: 5,
     title: "Mobile App Development",
-    image:
-      "https://ivy-school.thimpress.com/demo-4/wp-content/uploads/sites/4/2017/12/Untitled-18-450x300.jpg",
+    image: course05,
     lessons: 55,
     hours: 28,
     students: 70,
@@ -65,8 +68,7 @@ export const courses = [
   {
     id: 6,
     title: "Photography Basics",
-    image:
-      "https://ivy-school.thimpress.com/demo-4/wp-content/uploads/sites/4/2017/12/Untitled-15-450x300.jpg",
+    image: course06,
     lessons: 40,
     hours: 22,
     students: 55,
@@ -76,8 +78,7 @@ export const courses = [
   {
     id: 7,
     title: "Social Media Marketing Strategies",
-    image:
-      "https://ivy-school.thimpress.com/demo-4/wp-content/uploads/sites/4/2018/10/Untitled-1l-1-450x300.jpg",
+    image: course07,
     lessons: 50,
     hours: 24,
     students: 65,
