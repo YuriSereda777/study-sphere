@@ -1,4 +1,4 @@
-# Study Sphere Web App
+# Study Sphere
 
 This is a React web application for "Study Sphere," a platform designed for educational purposes. The app includes sections such as a hero banner, an about page, a teachers section, courses page, and a contact section using the emailjs library for email functionality.
 
@@ -57,4 +57,4 @@ To deploy the app, follow the deployment process specific to your hosting platfo
 
 ## Demo
 
-Visit the deployed version of the app at [Study Sphere App](https://study-sphere-app.netlify.app).
+Visit the deployed version at [Study Sphere](https://study-sphere.netlify.app).
