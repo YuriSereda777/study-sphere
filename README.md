@@ -32,7 +32,7 @@ This is a React web application for "Study Sphere," a platform designed for educ
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/0xOmarAdel/study-sphere.git`
+1. Clone the repository: `git clone https://github.com/BMBruce/study-sphere.git`
 2. Navigate to the project directory: `cd study-sphere`
 3. Install dependencies: `npm install`
 
